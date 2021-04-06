@@ -25,7 +25,6 @@ function setup(){
 }
 
 function draw() {
-    // noLoop()
     noFill()
 
   if (detections.length > 0) {
@@ -35,10 +34,6 @@ function draw() {
       let leftEyeBrow = detections[0].parts.leftEyeBrow[2];
       let rightEyeBrow = detections[0].parts.rightEyeBrow[2];
       let uniBrow = [(leftEyeBrow._x + rightEyeBrow.x)/2, (leftEyeBrow._y + rightEyeBrow.y)/2];
-      
-    //   calculate distance between brows and mouth
-    // let dBrowsMouth = dist(uniBrow[0], uniBrow[1], mouthBottom._x, mouthBottom._y);
-    // console.log(dBrowsMouth);
 
     // define color 
       let h = (uniBrow[0]/video.height) * 100;
@@ -56,24 +51,11 @@ function draw() {
 
     t = t + 0.1;
   }
-//   mouseClicked();
 }
-
-
-// function drawCircle(nosePoint) {
-//     let r = (nosePoint._x/video.width) * 100;
-//     let g = (nosePoint.y/video.height) * 255;
-//     let b = (nosePoint.x/video.width) * 180;
-//     fill(r, g, b);
-//     // console.log(r,g,b);
-//     ellipse(nosePoint._x, nosePoint._y, 100);
-// }
-
 
 function modelReady() {
     faceapi.detect(gotResults)
 };
-
 
 function gotResults(error, result) {
     if (error) {

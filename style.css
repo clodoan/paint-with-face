@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Open+Sans&display=swap");
 h1 {
   text-align: center;
-  font-family: "Dela Gothic One";
+  font-family: "Dela Gothic One", cursive;
 }
 
 canvas {
@@ -22,6 +22,17 @@ canvas {
 
 .full-countainer {
   margin-top: 40px;
+}
+
+#signature {
+  text-align: right;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  font-family: "Open Sans", sans-serif;
+}
+#signature a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
