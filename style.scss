@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+h1 {
+    text-align: center;
+    font-family: 'Dela Gothic One';
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#container {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    background-color: #111;
+    margin-top: 32px;
+}
+
+.title {
+    margin: 40px 0px;
+}
+
+.full-countainer {
+    margin-top: 40px;
+}
