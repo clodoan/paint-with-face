@@ -1,8 +1,8 @@
 let video;
 let faceapi;
 let detections = [];
-let cw = 1200;
-let ch = 800;
+let cw = 900;
+let ch = 600;
 t = 0;
 
 function setup(){
