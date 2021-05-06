@@ -4,10 +4,6 @@ h1 {
   font-family: "Dela Gothic One", cursive;
 }
 
-canvas {
-  border: 1px solid black;
-}
-
 #container {
   display: block;
   margin: auto;

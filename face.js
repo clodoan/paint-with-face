@@ -25,7 +25,8 @@ function setup(){
 }
 
 function draw() {
-    noFill()
+    noFill();
+    image(video, 0, 0, 290, 160)
 
   if (detections.length > 0) {
       // get face points
